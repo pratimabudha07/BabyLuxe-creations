@@ -3,24 +3,1018 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>PKA Little Luxe — Elegant Baby Essentials for Tender Beginnings</title>
+    <meta name="description" content="PKA Little Luxe — culturally rich, elegant baby clothing, organic toys, heirloom gifts, and newborn essentials crafted with soft fabrics and skin-safe natural ingredients." />
+    <meta name="author" content="PKA Little Luxe" />
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="PKA Little Luxe — Elegant Baby Essentials" />
+    <meta property="og:description" content="Soft fabrics, gentle fragrances, and heirloom craftsmanship for newborns and little ones." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=1200" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: {
+                50: '#FBF7F1',
+                100: '#F6EFE3',
+                200: '#EFE3CE',
+                300: '#E4D2B3',
+              },
+              blush: {
+                100: '#FBE8E4',
+                200: '#F6CFC7',
+                400: '#E2A097',
+                600: '#B86F66',
+              },
+              sage: {
+                100: '#E5EBDD',
+                300: '#B6C29B',
+                500: '#7E8C63',
+                700: '#4F5A3C',
+              },
+              ink: {
+                700: '#3E2C24',
+                800: '#2C1F19',
+                900: '#1C130F',
+              },
+              gold: {
+                400: '#D6B16A',
+                500: '#C29A4B',
+                600: '#A07C30',
+              },
+            },
+            fontFamily: {
+              display: ['"Fraunces"', 'serif'],
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Inter"', 'sans-serif'],
+              script: ['"Dancing Script"', 'cursive'],
+            },
+            boxShadow: {
+              soft: '0 20px 60px -25px rgba(60, 32, 20, 0.25)',
+              petal: '0 8px 30px -10px rgba(184, 111, 102, 0.35)',
+            },
+            backgroundImage: {
+              'cream-radial': 'radial-gradient(circle at 20% 10%, #FBE8E4 0%, transparent 45%), radial-gradient(circle at 85% 30%, #E5EBDD 0%, transparent 50%), linear-gradient(180deg, #FBF7F1 0%, #F6EFE3 100%)',
+              'gold-line': 'linear-gradient(90deg, transparent, #C29A4B, transparent)',
+            },
+            keyframes: {
+              floaty: {
+                '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                '50%': { transform: 'translateY(-12px) rotate(2deg)' },
+              },
+              fadeUp: {
+                '0%': { opacity: 0, transform: 'translateY(20px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+              shimmer: {
+                '0%': { backgroundPosition: '-500px 0' },
+                '100%': { backgroundPosition: '500px 0' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+            },
+            animation: {
+              floaty: 'floaty 6s ease-in-out infinite',
+              fadeUp: 'fadeUp 0.9s ease-out both',
+              shimmer: 'shimmer 3s linear infinite',
+              marquee: 'marquee 35s linear infinite',
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #FBF7F1;
+        color: #2C1F19;
+      }
+      .font-display { font-family: 'Fraunces', serif; }
+      .font-serif-soft { font-family: 'Cormorant Garamond', serif; }
+      .font-script { font-family: 'Dancing Script', cursive; }
+
+      /* Logo monogram */
+      .pka-logo {
+        font-family: 'Fraunces', serif;
+        font-weight: 600;
+        letter-spacing: -0.04em;
+        background: linear-gradient(135deg, #B86F66 0%, #C29A4B 60%, #7E8C63 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      /* Decorative gold underline */
+      .gold-underline::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        margin: 14px auto 0;
+        background: linear-gradient(90deg, transparent, #C29A4B, transparent);
+      }
+
+      /* Scalloped paper edge */
+      .scallop-top {
+        --c: #FBF7F1;
+        background:
+          radial-gradient(circle at 10px 0, transparent 10px, var(--c) 11px) repeat-x;
+        background-size: 20px 12px;
+        height: 12px;
+      }
+
+      /* Soft grain texture overlay */
+      .grain::before {
+        content: "";
+        position: absolute; inset: 0;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.18 0 0 0 0 0.12 0 0 0 0 0.08 0 0 0 0.05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+        opacity: .35;
+        pointer-events: none;
+        mix-blend-mode: multiply;
+      }
+
+      /* Custom marquee */
+      .marquee-track { width: max-content; }
+
+      /* Card hover */
+      .product-card { transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s; }
+      .product-card:hover { transform: translateY(-8px); box-shadow: 0 30px 60px -25px rgba(60,32,20,.25); }
+
+      /* Ribbon badge */
+      .ribbon {
+        position: absolute; top: 14px; left: -8px;
+        background: linear-gradient(135deg, #B86F66, #E2A097);
+        color: #FBF7F1;
+        font-size: 10px; letter-spacing: .18em; text-transform: uppercase;
+        padding: 6px 12px;
+        border-radius: 2px;
+        box-shadow: 0 6px 18px -8px rgba(184,111,102,.6);
+      }
+      .ribbon::before {
+        content: ""; position: absolute; left: 0; bottom: -6px;
+        border: 4px solid transparent; border-top-color: #7a3a33; border-right-color: #7a3a33;
+      }
+
+      /* Petal divider */
+      .petal {
+        width: 22px; height: 22px;
+        background: radial-gradient(circle at 30% 30%, #F6CFC7, #B86F66);
+        border-radius: 0 100% 0 100%;
+        transform: rotate(-45deg);
+        display: inline-block;
+      }
+
+      /* Form inputs */
+      .luxe-input {
+        background: rgba(255,255,255,.6);
+        border: 1px solid #EFE3CE;
+        backdrop-filter: blur(6px);
+      }
+      .luxe-input:focus {
+        outline: none; border-color: #C29A4B;
+        box-shadow: 0 0 0 4px rgba(194,154,75,.15);
+      }
+
+      /* Hide scrollbar on marquee */
+      .marquee-wrap { overflow: hidden; }
+
+      /* Reveal-on-scroll baseline */
+      .reveal { opacity: 0; transform: translateY(20px); transition: opacity .9s ease, transform .9s ease; }
+      .reveal.in { opacity: 1; transform: translateY(0); }
+
+      /* Decorative SVG corners */
+      .corner-frame { position: relative; }
+      .corner-frame::before, .corner-frame::after {
+        content: ""; position: absolute; width: 28px; height: 28px;
+        border: 1.5px solid #C29A4B; opacity: .7;
+      }
+      .corner-frame::before { top: 10px; left: 10px; border-right: 0; border-bottom: 0; }
+      .corner-frame::after { bottom: 10px; right: 10px; border-left: 0; border-top: 0; }
+    </style>
   </head>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="bg-cream-50 text-ink-800 antialiased">
+
+    <!-- ============== ANNOUNCEMENT BAR ============== -->
+    <div class="bg-ink-800 text-cream-100 text-xs tracking-[0.25em] uppercase">
+      <div class="marquee-wrap">
+        <div class="marquee-track flex gap-12 py-3 animate-marquee whitespace-nowrap">
+          <span>✦ Complimentary muslin gift on orders over ₹2,499</span>
+          <span>✦ OEKO-TEX® certified soft fabrics</span>
+          <span>✦ Hand-block printed in Jaipur</span>
+          <span>✦ Free shipping across India</span>
+          <span>✦ Newborn boxes ship in heirloom keepsake trunks</span>
+          <span>✦ Complimentary muslin gift on orders over ₹2,499</span>
+          <span>✦ OEKO-TEX® certified soft fabrics</span>
+          <span>✦ Hand-block printed in Jaipur</span>
+          <span>✦ Free shipping across India</span>
+          <span>✦ Newborn boxes ship in heirloom keepsake trunks</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============== NAVIGATION ============== -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-cream-50/80 border-b border-cream-200">
+      <nav class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="relative w-12 h-12 rounded-full bg-cream-100 border border-gold-400/50 flex items-center justify-center shadow-petal">
+            <svg viewBox="0 0 60 60" class="absolute inset-0 w-full h-full">
+              <circle cx="30" cy="30" r="28" fill="none" stroke="#C29A4B" stroke-width="0.6" stroke-dasharray="2 3" opacity="0.6"/>
+            </svg>
+            <span class="pka-logo text-lg leading-none">PKA</span>
+          </div>
+          <div class="leading-tight">
+            <div class="font-display text-lg text-ink-800">Little Luxe</div>
+            <div class="text-[10px] tracking-[0.3em] uppercase text-sage-700">est · 2024</div>
+          </div>
+        </a>
+
+        <!-- Links -->
+        <ul class="hidden lg:flex items-center gap-10 text-sm tracking-wide text-ink-700">
+          <li><a href="#shop" class="hover:text-blush-600 transition">Shop</a></li>
+          <li><a href="#newborn" class="hover:text-blush-600 transition">Newborn</a></li>
+          <li><a href="#story" class="hover:text-blush-600 transition">Our Story</a></li>
+          <li><a href="#fabric" class="hover:text-blush-600 transition">Fabric & Care</a></li>
+          <li><a href="#gifting" class="hover:text-blush-600 transition">Gifting</a></li>
+          <li><a href="#journal" class="hover:text-blush-600 transition">Journal</a></li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-5">
+          <button aria-label="Search" class="text-ink-700 hover:text-blush-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          </button>
+          <button aria-label="Account" class="text-ink-700 hover:text-blush-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+          </button>
+          <button aria-label="Cart" class="relative text-ink-700 hover:text-blush-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 7h12l-1.5 11a2 2 0 0 1-2 1.8H9.5a2 2 0 0 1-2-1.8L6 7z"/><path d="M9 7a3 3 0 1 1 6 0"/></svg>
+            <span class="absolute -top-2 -right-2 bg-blush-600 text-cream-100 rounded-full text-[10px] w-4 h-4 flex items-center justify-center">2</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ============== HERO ============== -->
+    <section id="home" class="relative overflow-hidden bg-cream-radial">
+      <div class="grain absolute inset-0"></div>
+      <!-- Decorative SVG flourishes -->
+      <svg class="absolute -top-10 -left-10 w-72 h-72 text-blush-200 opacity-50" viewBox="0 0 200 200" fill="currentColor">
+        <path d="M100 10c20 30 60 30 90 50-30 20-30 60-50 90-20-30-60-30-90-50 30-20 30-60 50-90z"/>
+      </svg>
+      <svg class="absolute bottom-0 right-0 w-96 h-96 text-sage-100 opacity-70" viewBox="0 0 200 200" fill="currentColor">
+        <circle cx="100" cy="100" r="90"/>
+      </svg>
+
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-10 pt-20 pb-28 grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Copy -->
+        <div class="lg:col-span-6 animate-fadeUp">
+          <span class="inline-flex items-center gap-2 text-[11px] tracking-[0.35em] uppercase text-sage-700">
+            <span class="petal scale-50"></span> A new heirloom for little ones
+          </span>
+          <h1 class="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.02] text-ink-900">
+            Tender beginnings,<br/>
+            <em class="font-display italic text-blush-600">woven with</em><br/>
+            <span class="relative">
+              quiet luxury.
+              <svg class="absolute -bottom-3 left-0 w-full" height="14" viewBox="0 0 300 14" fill="none">
+                <path d="M2 8 Q 75 2, 150 8 T 298 8" stroke="#C29A4B" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h1>
+          <p class="mt-8 font-serif-soft text-xl text-ink-700/80 max-w-lg leading-relaxed">
+            PKA Little Luxe is a slow-craft baby atelier — feather-soft cottons, plant-dyed muslins, and skin-kind essentials inspired by the lullabies of our grandmothers.
+          </p>
+          <div class="mt-10 flex flex-wrap items-center gap-5">
+            <a href="#shop" class="group inline-flex items-center gap-3 bg-ink-800 text-cream-100 px-8 py-4 rounded-full text-sm tracking-[0.2em] uppercase hover:bg-blush-600 transition">
+              Shop the Atelier
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#newborn" class="inline-flex items-center gap-2 text-sm tracking-[0.2em] uppercase text-ink-800 border-b border-gold-500 pb-1 hover:text-blush-600 transition">
+              Newborn Trousseau
+            </a>
+          </div>
+
+          <!-- Trust pills -->
+          <div class="mt-12 grid grid-cols-3 max-w-md gap-6 text-center">
+            <div>
+              <div class="font-display text-2xl text-blush-600">100%</div>
+              <div class="text-[11px] tracking-[0.2em] uppercase text-ink-700/70 mt-1">Organic Cotton</div>
+            </div>
+            <div class="border-x border-cream-200">
+              <div class="font-display text-2xl text-sage-700">OEKO</div>
+              <div class="text-[11px] tracking-[0.2em] uppercase text-ink-700/70 mt-1">Certified</div>
+            </div>
+            <div>
+              <div class="font-display text-2xl text-gold-600">12k+</div>
+              <div class="text-[11px] tracking-[0.2em] uppercase text-ink-700/70 mt-1">Tiny Patrons</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative w-full aspect-[4/5] rounded-[40px] overflow-hidden shadow-soft corner-frame">
+            <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=900&q=80" alt="Baby in soft cotton" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-tr from-ink-900/30 via-transparent to-transparent"></div>
+          </div>
+
+          <!-- Floating cards -->
+          <div class="absolute -left-6 top-12 bg-cream-50/95 backdrop-blur rounded-2xl shadow-petal px-5 py-4 flex items-center gap-3 animate-floaty">
+            <div class="w-10 h-10 rounded-full bg-blush-100 flex items-center justify-center">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B86F66" stroke-width="1.5"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11z"/></svg>
+            </div>
+            <div>
+              <div class="text-[10px] tracking-[0.25em] uppercase text-sage-700">Hypoallergenic</div>
+              <div class="font-display text-sm text-ink-800">Skin-kind & gentle</div>
+            </div>
+          </div>
+
+          <div class="absolute -right-4 bottom-10 bg-cream-50/95 backdrop-blur rounded-2xl shadow-petal px-5 py-4 flex items-center gap-3 animate-floaty" style="animation-delay:-3s">
+            <div class="w-10 h-10 rounded-full bg-sage-100 flex items-center justify-center">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4F5A3C" stroke-width="1.5"><path d="M12 2v6M5 9c2 0 3 2 3 4s-1 4-3 4M19 9c-2 0-3 2-3 4s1 4 3 4M9 22h6"/></svg>
+            </div>
+            <div>
+              <div class="text-[10px] tracking-[0.25em] uppercase text-blush-600">Plant-dyed</div>
+              <div class="font-display text-sm text-ink-800">Hand-loomed muslin</div>
+            </div>
+          </div>
+
+          <div class="absolute right-10 -top-6 bg-gold-500 text-cream-100 rounded-full w-24 h-24 flex items-center justify-center text-center font-display text-xs leading-tight rotate-12 shadow-petal">
+            Heirloom<br/>Quality<br/>★ ★ ★
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== BRAND STRIP / LOGOS ============== -->
+    <section class="border-y border-cream-200 bg-cream-100/60">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-8 flex flex-wrap items-center justify-center gap-x-14 gap-y-4 text-ink-700/60 text-sm tracking-[0.25em] uppercase font-serif-soft">
+        <span>Vogue Baby</span>
+        <span>·</span>
+        <span>Conde Nast Traveller</span>
+        <span>·</span>
+        <span>The Voice of Fashion</span>
+        <span>·</span>
+        <span>Elle Décor</span>
+        <span>·</span>
+        <span>Architectural Digest</span>
+      </div>
+    </section>
+
+    <!-- ============== CATEGORIES ============== -->
+    <section id="shop" class="relative py-28">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="text-center max-w-2xl mx-auto reveal">
+          <span class="text-[11px] tracking-[0.35em] uppercase text-blush-600">The Atelier</span>
+          <h2 class="font-display text-4xl sm:text-5xl mt-4 text-ink-900 gold-underline">Curated for little ones</h2>
+          <p class="mt-6 font-serif-soft text-lg text-ink-700/80">Four collections, each crafted with intent — from the first swaddle to the first festive jhabla.</p>
+        </div>
+
+        <div class="mt-20 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card -->
+          <a href="#" class="product-card group relative bg-blush-100 rounded-3xl overflow-hidden p-6 flex flex-col h-96">
+            <div class="text-[10px] tracking-[0.3em] uppercase text-blush-600">01 / Apparel</div>
+            <h3 class="mt-3 font-display text-3xl text-ink-900 leading-tight">Soft<br/>Clothing</h3>
+            <p class="mt-2 text-sm text-ink-700/70 max-w-[180px]">Onesies, jhablas, kurta sets in feather-soft cotton.</p>
+            <div class="mt-auto flex items-center justify-between">
+              <span class="text-xs tracking-[0.2em] uppercase text-ink-800 border-b border-gold-500 pb-0.5">Explore</span>
+              <div class="w-24 h-24 rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=300" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Baby clothing"/>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card group relative bg-sage-100 rounded-3xl overflow-hidden p-6 flex flex-col h-96">
+            <div class="text-[10px] tracking-[0.3em] uppercase text-sage-700">02 / Play</div>
+            <h3 class="mt-3 font-display text-3xl text-ink-900 leading-tight">Wooden<br/>Toys</h3>
+            <p class="mt-2 text-sm text-ink-700/70 max-w-[180px]">Heirloom rattles, plush dolls & sensory keepsakes.</p>
+            <div class="mt-auto flex items-center justify-between">
+              <span class="text-xs tracking-[0.2em] uppercase text-ink-800 border-b border-gold-500 pb-0.5">Explore</span>
+              <div class="w-24 h-24 rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1558877385-81a1c7e67d72?auto=format&fit=crop&w=300" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Wooden toys"/>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card group relative bg-cream-200 rounded-3xl overflow-hidden p-6 flex flex-col h-96">
+            <div class="text-[10px] tracking-[0.3em] uppercase text-gold-600">03 / Newborn</div>
+            <h3 class="mt-3 font-display text-3xl text-ink-900 leading-tight">First<br/>Essentials</h3>
+            <p class="mt-2 text-sm text-ink-700/70 max-w-[180px]">Swaddles, mittens, caps & welcome trunks.</p>
+            <div class="mt-auto flex items-center justify-between">
+              <span class="text-xs tracking-[0.2em] uppercase text-ink-800 border-b border-gold-500 pb-0.5">Explore</span>
+              <div class="w-24 h-24 rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=300" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Newborn essentials"/>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card group relative bg-blush-200/70 rounded-3xl overflow-hidden p-6 flex flex-col h-96">
+            <div class="text-[10px] tracking-[0.3em] uppercase text-blush-600">04 / Gifting</div>
+            <h3 class="mt-3 font-display text-3xl text-ink-900 leading-tight">Heirloom<br/>Gifts</h3>
+            <p class="mt-2 text-sm text-ink-700/70 max-w-[180px]">Trousseau trunks, custom monograms & ceremonies.</p>
+            <div class="mt-auto flex items-center justify-between">
+              <span class="text-xs tracking-[0.2em] uppercase text-ink-800 border-b border-gold-500 pb-0.5">Explore</span>
+              <div class="w-24 h-24 rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=300" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Gift boxes"/>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FEATURED PRODUCTS ============== -->
+    <section class="relative py-28 bg-cream-100/70">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="flex flex-wrap items-end justify-between gap-6 reveal">
+          <div>
+            <span class="text-[11px] tracking-[0.35em] uppercase text-sage-700">Bestsellers</span>
+            <h2 class="font-display text-4xl sm:text-5xl mt-3 text-ink-900">Loved by tiny hands</h2>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <button class="px-4 py-2 rounded-full border border-ink-800 text-ink-800 tracking-wider uppercase text-xs">All</button>
+            <button class="px-4 py-2 rounded-full border border-cream-300 text-ink-700/70 tracking-wider uppercase text-xs hover:border-ink-800 hover:text-ink-800 transition">Girls</button>
+            <button class="px-4 py-2 rounded-full border border-cream-300 text-ink-700/70 tracking-wider uppercase text-xs hover:border-ink-800 hover:text-ink-800 transition">Boys</button>
+            <button class="px-4 py-2 rounded-full border border-cream-300 text-ink-700/70 tracking-wider uppercase text-xs hover:border-ink-800 hover:text-ink-800 transition">Unisex</button>
+          </div>
+        </div>
+
+        <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Product -->
+          <article class="product-card group">
+            <div class="relative bg-cream-50 rounded-2xl overflow-hidden aspect-[4/5]">
+              <span class="ribbon">New</span>
+              <img src="https://images.unsplash.com/photo-1543854704-783ce6a26577?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Mulmul Jhabla"/>
+              <button class="absolute bottom-4 left-4 right-4 bg-ink-800/90 backdrop-blur text-cream-100 text-xs tracking-[0.25em] uppercase py-3 rounded-full opacity-0 group-hover:opacity-100 transition">Quick Add</button>
+            </div>
+            <div class="mt-5 flex items-start justify-between">
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Mulmul Jhabla — Marigold</h4>
+                <p class="text-xs tracking-[0.2em] uppercase text-ink-700/60 mt-1">Hand-block · Unisex</p>
+              </div>
+              <div class="text-right">
+                <div class="font-display text-lg text-blush-600">₹1,890</div>
+                <div class="text-xs text-ink-700/50 line-through">₹2,400</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card group">
+            <div class="relative bg-cream-50 rounded-2xl overflow-hidden aspect-[4/5]">
+              <img src="https://images.unsplash.com/photo-1566479179817-c0c5e0e3ee30?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Wooden rattle"/>
+              <button class="absolute bottom-4 left-4 right-4 bg-ink-800/90 backdrop-blur text-cream-100 text-xs tracking-[0.25em] uppercase py-3 rounded-full opacity-0 group-hover:opacity-100 transition">Quick Add</button>
+            </div>
+            <div class="mt-5 flex items-start justify-between">
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Neem Wood Rattle</h4>
+                <p class="text-xs tracking-[0.2em] uppercase text-ink-700/60 mt-1">Heirloom · Unisex</p>
+              </div>
+              <div class="text-right">
+                <div class="font-display text-lg text-blush-600">₹1,250</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card group">
+            <div class="relative bg-cream-50 rounded-2xl overflow-hidden aspect-[4/5]">
+              <span class="ribbon" style="background: linear-gradient(135deg,#7E8C63,#B6C29B)">Limited</span>
+              <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Swaddle set"/>
+              <button class="absolute bottom-4 left-4 right-4 bg-ink-800/90 backdrop-blur text-cream-100 text-xs tracking-[0.25em] uppercase py-3 rounded-full opacity-0 group-hover:opacity-100 transition">Quick Add</button>
+            </div>
+            <div class="mt-5 flex items-start justify-between">
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Lotus Swaddle Trio</h4>
+                <p class="text-xs tracking-[0.2em] uppercase text-ink-700/60 mt-1">Organic · Newborn</p>
+              </div>
+              <div class="text-right">
+                <div class="font-display text-lg text-blush-600">₹2,490</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card group">
+            <div class="relative bg-cream-50 rounded-2xl overflow-hidden aspect-[4/5]">
+              <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Gift box"/>
+              <button class="absolute bottom-4 left-4 right-4 bg-ink-800/90 backdrop-blur text-cream-100 text-xs tracking-[0.25em] uppercase py-3 rounded-full opacity-0 group-hover:opacity-100 transition">Quick Add</button>
+            </div>
+            <div class="mt-5 flex items-start justify-between">
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Welcome Trunk No. 3</h4>
+                <p class="text-xs tracking-[0.2em] uppercase text-ink-700/60 mt-1">Gifting · 0–6m</p>
+              </div>
+              <div class="text-right">
+                <div class="font-display text-lg text-blush-600">₹6,990</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card group">
+            <div class="relative bg-cream-50 rounded-2xl overflow-hidden aspect-[4/5]">
+              <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Cap and mittens"/>
+              <button class="absolute bottom-4 left-4 right-4 bg-ink-800/90 backdrop-blur text-cream-100 text-xs tracking-[0.25em] uppercase py-3 rounded-full opacity-0 group-hover:opacity-100 transition">Quick Add</button>
+            </div>
+            <div class="mt-5 flex items-start justify-between">
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Chand Cap & Mittens</h4>
+                <p class="text-xs tracking-[0.2em] uppercase text-ink-700/60 mt-1">Knit · Newborn</p>
+              </div>
+              <div class="text-right">
+                <div class="font-display text-lg text-blush-600">₹990</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card group">
+            <div class="relative bg-cream-50 rounded-2xl overflow-hidden aspect-[4/5]">
+              <img src="https://images.unsplash.com/photo-1558877385-81a1c7e67d72?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Plush elephant"/>
+              <button class="absolute bottom-4 left-4 right-4 bg-ink-800/90 backdrop-blur text-cream-100 text-xs tracking-[0.25em] uppercase py-3 rounded-full opacity-0 group-hover:opacity-100 transition">Quick Add</button>
+            </div>
+            <div class="mt-5 flex items-start justify-between">
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Gajraj Plush Companion</h4>
+                <p class="text-xs tracking-[0.2em] uppercase text-ink-700/60 mt-1">Plush · Unisex</p>
+              </div>
+              <div class="text-right">
+                <div class="font-display text-lg text-blush-600">₹1,690</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card group">
+            <div class="relative bg-cream-50 rounded-2xl overflow-hidden aspect-[4/5]">
+              <span class="ribbon">Bestseller</span>
+              <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Sleep suit"/>
+              <button class="absolute bottom-4 left-4 right-4 bg-ink-800/90 backdrop-blur text-cream-100 text-xs tracking-[0.25em] uppercase py-3 rounded-full opacity-0 group-hover:opacity-100 transition">Quick Add</button>
+            </div>
+            <div class="mt-5 flex items-start justify-between">
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Cloud Sleep Suit</h4>
+                <p class="text-xs tracking-[0.2em] uppercase text-ink-700/60 mt-1">Bamboo · 0–12m</p>
+              </div>
+              <div class="text-right">
+                <div class="font-display text-lg text-blush-600">₹1,490</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card group">
+            <div class="relative bg-cream-50 rounded-2xl overflow-hidden aspect-[4/5]">
+              <img src="https://images.unsplash.com/photo-1596079890744-c1a0462d0975?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Bath oil"/>
+              <button class="absolute bottom-4 left-4 right-4 bg-ink-800/90 backdrop-blur text-cream-100 text-xs tracking-[0.25em] uppercase py-3 rounded-full opacity-0 group-hover:opacity-100 transition">Quick Add</button>
+            </div>
+            <div class="mt-5 flex items-start justify-between">
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Almond & Ashwagandha Oil</h4>
+                <p class="text-xs tracking-[0.2em] uppercase text-ink-700/60 mt-1">Skincare · Newborn+</p>
+              </div>
+              <div class="text-right">
+                <div class="font-display text-lg text-blush-600">₹790</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-16 text-center">
+          <a href="#" class="inline-flex items-center gap-3 text-sm tracking-[0.25em] uppercase text-ink-800 border border-ink-800 px-8 py-4 rounded-full hover:bg-ink-800 hover:text-cream-100 transition">
+            View Full Atelier
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== STORY / FABRIC ============== -->
+    <section id="fabric" class="relative py-32 overflow-hidden">
+      <svg class="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] opacity-20" viewBox="0 0 600 100" fill="none">
+        <path d="M0 50 Q 150 0 300 50 T 600 50" stroke="#C29A4B" stroke-width="1.2"/>
+      </svg>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500" class="rounded-3xl aspect-[4/5] object-cover shadow-soft" alt="Fabric"/>
+            <img src="https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=500" class="rounded-3xl aspect-[4/5] object-cover shadow-soft mt-12" alt="Botanicals"/>
+          </div>
+          <div class="absolute -bottom-8 -left-8 bg-cream-50 rounded-3xl px-6 py-5 shadow-petal max-w-[220px]">
+            <div class="font-script text-blush-600 text-2xl">Soft as a whisper</div>
+            <p class="text-xs text-ink-700/70 mt-1">Triple-washed muslin softens with every wear.</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="text-[11px] tracking-[0.35em] uppercase text-blush-600">Fabric & Care</span>
+          <h2 class="font-display text-4xl sm:text-5xl mt-4 text-ink-900 leading-tight">A second skin,<br/><em class="italic text-sage-700">spun from nature.</em></h2>
+          <p class="mt-6 font-serif-soft text-lg text-ink-700/80 leading-relaxed">
+            Every PKA piece begins on a handloom in the lanes of Bagru and Kanchipuram. We use only OEKO-TEX® certified cottons, bamboo silks and plant dyes — turmeric, indigo, madder, pomegranate. No azo dyes, no harsh chemicals, no compromises.
+          </p>
+
+          <div class="mt-10 grid sm:grid-cols-2 gap-6">
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-blush-100 flex items-center justify-center shrink-0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B86F66" stroke-width="1.5"><path d="M12 2c3 4 3 8 0 12-3-4-3-8 0-12zM12 14c4 2 6 5 5 8-3-1-6-4-5-8zM12 14c-4 2-6 5-5 8 3-1 6-4 5-8z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Plant-based dyes</h4>
+                <p class="text-sm text-ink-700/70 mt-1">Color drawn from marigold petals & madder root.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-sage-100 flex items-center justify-center shrink-0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4F5A3C" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+              </div>
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Breathable weave</h4>
+                <p class="text-sm text-ink-700/70 mt-1">Air-light mulmul keeps skin cool & calm.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-cream-200 flex items-center justify-center shrink-0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A07C30" stroke-width="1.5"><path d="M12 3v18M5 8c4 0 4 4 7 4s3-4 7-4"/></svg>
+              </div>
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Skin-kind finish</h4>
+                <p class="text-sm text-ink-700/70 mt-1">Triple rinsed, free of formaldehyde & azo.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-blush-200/70 flex items-center justify-center shrink-0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B86F66" stroke-width="1.5"><path d="M20 7 9 18l-5-5"/></svg>
+              </div>
+              <div>
+                <h4 class="font-display text-lg text-ink-900">Heirloom-tested</h4>
+                <p class="text-sm text-ink-700/70 mt-1">Made to be passed down to the next little one.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FRAGRANCE & SKINCARE BANNER ============== -->
+    <section class="relative py-28 bg-ink-800 text-cream-100 overflow-hidden">
+      <div class="grain absolute inset-0 opacity-30"></div>
+      <svg class="absolute -top-20 -right-20 w-[500px] h-[500px] opacity-10" viewBox="0 0 200 200" fill="#C29A4B">
+        <path d="M100 10c20 30 60 30 90 50-30 20-30 60-50 90-20-30-60-30-90-50 30-20 30-60 50-90z"/>
+      </svg>
+
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <span class="text-[11px] tracking-[0.35em] uppercase text-gold-400">Petite Apothecary</span>
+          <h2 class="font-display text-4xl sm:text-6xl mt-4 leading-[1.05]">Whispers of <em class="italic text-blush-200">jasmine,</em><br/> kissed by <em class="italic text-gold-400">almond.</em></h2>
+          <p class="mt-6 font-serif-soft text-xl text-cream-100/80 max-w-xl">
+            Our nursery apothecary is blended with cold-pressed almond, ashwagandha, calendula and a single drop of mogra — fragrant enough to soothe, gentle enough for newborn skin.
+          </p>
+
+          <div class="mt-10 flex flex-wrap gap-3">
+            <span class="px-4 py-2 rounded-full border border-cream-100/30 text-xs tracking-[0.2em] uppercase">Paraben-free</span>
+            <span class="px-4 py-2 rounded-full border border-cream-100/30 text-xs tracking-[0.2em] uppercase">Sulphate-free</span>
+            <span class="px-4 py-2 rounded-full border border-cream-100/30 text-xs tracking-[0.2em] uppercase">Dermatologically tested</span>
+            <span class="px-4 py-2 rounded-full border border-cream-100/30 text-xs tracking-[0.2em] uppercase">Vegan & Cruelty-free</span>
+          </div>
+
+          <a href="#" class="mt-10 inline-flex items-center gap-3 bg-gold-500 text-ink-900 px-8 py-4 rounded-full text-sm tracking-[0.2em] uppercase hover:bg-blush-200 transition">
+            Discover Apothecary
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="lg:col-span-5 relative flex items-center justify-center">
+          <div class="relative w-72 h-96">
+            <div class="absolute inset-0 rounded-full bg-gradient-to-br from-blush-400/40 to-gold-500/40 blur-3xl"></div>
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600" class="relative w-full h-full object-cover rounded-[200px] shadow-soft" alt="Apothecary bottle"/>
+            <div class="absolute -bottom-6 -left-10 bg-cream-50 text-ink-800 rounded-2xl px-5 py-3 shadow-petal animate-floaty">
+              <div class="font-script text-blush-600 text-2xl leading-tight">100% natural</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== NEWBORN COLLECTION ============== -->
+    <section id="newborn" class="py-32 bg-cream-50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="grid lg:grid-cols-3 gap-12">
+          <div class="lg:col-span-1 reveal">
+            <span class="text-[11px] tracking-[0.35em] uppercase text-blush-600">The First Trousseau</span>
+            <h2 class="font-display text-4xl sm:text-5xl mt-4 text-ink-900 leading-tight">Welcoming the <em class="italic">smallest</em> guest of honour.</h2>
+            <p class="mt-6 font-serif-soft text-lg text-ink-700/80">A thoughtfully curated trousseau for the first 90 days — soft to the touch, tender on the senses, and beautiful enough to keep forever.</p>
+            <a href="#" class="mt-8 inline-flex items-center gap-2 text-sm tracking-[0.25em] uppercase text-ink-800 border-b border-gold-500 pb-1 hover:text-blush-600 transition">Build Your Trunk →</a>
+          </div>
+
+          <div class="lg:col-span-2 grid grid-cols-2 gap-5">
+            <div class="relative rounded-3xl overflow-hidden aspect-square group">
+              <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="For her"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-ink-900/70 to-transparent"></div>
+              <div class="absolute bottom-6 left-6 text-cream-100">
+                <div class="text-[10px] tracking-[0.3em] uppercase text-blush-200">For Her</div>
+                <h3 class="font-display text-2xl mt-1">Petals & Pearls</h3>
+              </div>
+            </div>
+            <div class="relative rounded-3xl overflow-hidden aspect-square group mt-12">
+              <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="For him"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-ink-900/70 to-transparent"></div>
+              <div class="absolute bottom-6 left-6 text-cream-100">
+                <div class="text-[10px] tracking-[0.3em] uppercase text-sage-300">For Him</div>
+                <h3 class="font-display text-2xl mt-1">Saffron & Sky</h3>
+              </div>
+            </div>
+            <div class="relative rounded-3xl overflow-hidden aspect-square group">
+              <img src="https://images.unsplash.com/photo-1605545998212-90fe70282c1c?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Unisex"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-ink-900/70 to-transparent"></div>
+              <div class="absolute bottom-6 left-6 text-cream-100">
+                <div class="text-[10px] tracking-[0.3em] uppercase text-cream-200">Unisex</div>
+                <h3 class="font-display text-2xl mt-1">Cloud & Cotton</h3>
+              </div>
+            </div>
+            <div class="relative rounded-3xl overflow-hidden aspect-square group mt-12 bg-blush-100 p-8 flex flex-col justify-between">
+              <div>
+                <div class="text-[10px] tracking-[0.3em] uppercase text-blush-600">Custom</div>
+                <h3 class="font-display text-2xl mt-1 text-ink-900">Monogrammed Trunk</h3>
+              </div>
+              <p class="text-sm text-ink-700/70">Hand-embroidered initials on every piece. A keepsake from day one.</p>
+              <a href="#" class="text-xs tracking-[0.25em] uppercase text-ink-800 border-b border-gold-500 self-start pb-0.5">Personalise</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== STORY ============== -->
+    <section id="story" class="relative py-32 bg-sage-100/40">
+      <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center reveal">
+        <span class="text-[11px] tracking-[0.35em] uppercase text-sage-700">Our Story</span>
+        <h2 class="font-display text-4xl sm:text-6xl mt-4 text-ink-900 leading-[1.05]">
+          Born from a <em class="italic text-blush-600">lullaby,</em><br/> stitched with <em class="italic text-gold-600">memory.</em>
+        </h2>
+        <p class="mt-10 font-serif-soft text-xl text-ink-700/80 leading-relaxed">
+          PKA — named for the three little ones who started it all — began in a sunlit verandah, with a grandmother's <em>chikan</em> dupatta cut into a baby's first jhabla. Today, we are an atelier of 40 artisans across Rajasthan, Bengal and Tamil Nadu, weaving stories that little hands will hold long after they grow.
+        </p>
+        <div class="mt-14 flex items-center justify-center gap-4 text-blush-400">
+          <span class="petal"></span>
+          <span class="text-gold-500">✦</span>
+          <span class="petal"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== TESTIMONIALS ============== -->
+    <section class="py-28">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="text-center reveal">
+          <span class="text-[11px] tracking-[0.35em] uppercase text-blush-600">Petite Reviews</span>
+          <h2 class="font-display text-4xl sm:text-5xl mt-4 text-ink-900 gold-underline">Loved by mindful mothers</h2>
+        </div>
+
+        <div class="mt-16 grid md:grid-cols-3 gap-8">
+          <figure class="bg-cream-100/70 p-10 rounded-3xl relative">
+            <svg class="absolute top-6 right-6 text-gold-500/50" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H5a2 2 0 0 0-2 2v4h6v-4H9V7zm10 0h-4a2 2 0 0 0-2 2v4h6v-4h-2V7z"/></svg>
+            <p class="font-serif-soft text-xl text-ink-700 leading-relaxed">"The mulmul jhabla feels like it's been in our family for generations. My daughter falls asleep the moment we wrap her in it."</p>
+            <figcaption class="mt-6 flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-blush-200"></div>
+              <div>
+                <div class="font-display text-ink-900">Anaisha Mehra</div>
+                <div class="text-xs tracking-[0.2em] uppercase text-ink-700/60">Mumbai · Mother of Aarav</div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="bg-blush-100/70 p-10 rounded-3xl relative md:translate-y-6">
+            <svg class="absolute top-6 right-6 text-blush-400/60" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H5a2 2 0 0 0-2 2v4h6v-4H9V7zm10 0h-4a2 2 0 0 0-2 2v4h6v-4h-2V7z"/></svg>
+            <p class="font-serif-soft text-xl text-ink-700 leading-relaxed">"The almond oil is divinity in a bottle — soft on her skin and reminiscent of my own nani's malish."</p>
+            <figcaption class="mt-6 flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-sage-300"></div>
+              <div>
+                <div class="font-display text-ink-900">Riya Subramanian</div>
+                <div class="text-xs tracking-[0.2em] uppercase text-ink-700/60">Bengaluru · Mother of Meera</div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="bg-sage-100 p-10 rounded-3xl relative">
+            <svg class="absolute top-6 right-6 text-sage-500/50" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7H5a2 2 0 0 0-2 2v4h6v-4H9V7zm10 0h-4a2 2 0 0 0-2 2v4h6v-4h-2V7z"/></svg>
+            <p class="font-serif-soft text-xl text-ink-700 leading-relaxed">"PKA's welcome trunk was the most thoughtful gift we received — from the wooden rattle to the embroidered cap."</p>
+            <figcaption class="mt-6 flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-gold-400"></div>
+              <div>
+                <div class="font-display text-ink-900">Tara & Rohan Kapoor</div>
+                <div class="text-xs tracking-[0.2em] uppercase text-ink-700/60">Delhi · Parents of Vir</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== GIFTING CTA ============== -->
+    <section id="gifting" class="relative py-28 bg-cream-100">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="relative aspect-[4/3] rounded-[40px] overflow-hidden shadow-soft">
+          <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=900" class="w-full h-full object-cover" alt="Gift box"/>
+          <div class="absolute inset-0 bg-gradient-to-tr from-ink-900/40 to-transparent"></div>
+          <div class="absolute bottom-8 left-8 text-cream-100">
+            <div class="font-script text-3xl text-blush-200">With love,</div>
+            <div class="font-display text-2xl">from PKA to yours.</div>
+          </div>
+        </div>
+        <div class="reveal">
+          <span class="text-[11px] tracking-[0.35em] uppercase text-gold-600">Heirloom Gifting</span>
+          <h2 class="font-display text-4xl sm:text-5xl mt-4 text-ink-900 leading-tight">Gifts that begin <em class="italic text-blush-600">memories.</em></h2>
+          <p class="mt-6 font-serif-soft text-lg text-ink-700/80">Choose from our signature welcome trunks, godh bharai hampers and naamkaran keepsakes — each arriving in a hand-tied trousseau box with a calligraphed note.</p>
+
+          <ul class="mt-8 space-y-4">
+            <li class="flex items-center gap-4 pb-4 border-b border-cream-200">
+              <span class="font-display text-2xl text-blush-600">01</span>
+              <div class="flex-1">
+                <div class="font-display text-lg text-ink-900">Welcome Home Trunk</div>
+                <div class="text-xs tracking-[0.2em] uppercase text-ink-700/60">12 essentials · ₹6,990</div>
+              </div>
+              <span class="text-gold-500">→</span>
+            </li>
+            <li class="flex items-center gap-4 pb-4 border-b border-cream-200">
+              <span class="font-display text-2xl text-blush-600">02</span>
+              <div class="flex-1">
+                <div class="font-display text-lg text-ink-900">Godh Bharai Hamper</div>
+                <div class="text-xs tracking-[0.2em] uppercase text-ink-700/60">For mother-to-be · ₹4,490</div>
+              </div>
+              <span class="text-gold-500">→</span>
+            </li>
+            <li class="flex items-center gap-4 pb-4 border-b border-cream-200">
+              <span class="font-display text-2xl text-blush-600">03</span>
+              <div class="flex-1">
+                <div class="font-display text-lg text-ink-900">Naamkaran Keepsake</div>
+                <div class="text-xs tracking-[0.2em] uppercase text-ink-700/60">Engraved · ₹3,290</div>
+              </div>
+              <span class="text-gold-500">→</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== JOURNAL ============== -->
+    <section id="journal" class="py-28">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="flex items-end justify-between flex-wrap gap-6">
+          <div>
+            <span class="text-[11px] tracking-[0.35em] uppercase text-sage-700">Journal</span>
+            <h2 class="font-display text-4xl sm:text-5xl mt-3 text-ink-900">Notes from the nursery</h2>
+          </div>
+          <a href="#" class="text-sm tracking-[0.25em] uppercase text-ink-800 border-b border-gold-500 pb-1">All Stories →</a>
+        </div>
+
+        <div class="mt-14 grid md:grid-cols-3 gap-8">
+          <article class="group">
+            <div class="overflow-hidden rounded-3xl aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Journal"/>
+            </div>
+            <div class="mt-5">
+              <div class="text-[11px] tracking-[0.3em] uppercase text-blush-600">Rituals · 4 min</div>
+              <h3 class="font-display text-2xl mt-2 text-ink-900 group-hover:text-blush-600 transition">The lost art of newborn malish</h3>
+              <p class="text-sm text-ink-700/70 mt-2">An ode to grandmothers, warm oil and afternoon sunlight.</p>
+            </div>
+          </article>
+          <article class="group">
+            <div class="overflow-hidden rounded-3xl aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Journal"/>
+            </div>
+            <div class="mt-5">
+              <div class="text-[11px] tracking-[0.3em] uppercase text-sage-700">Craft · 6 min</div>
+              <h3 class="font-display text-2xl mt-2 text-ink-900 group-hover:text-blush-600 transition">Inside our Bagru block-print studio</h3>
+              <p class="text-sm text-ink-700/70 mt-2">Where marigold becomes mustard and indigo becomes sky.</p>
+            </div>
+          </article>
+          <article class="group">
+            <div class="overflow-hidden rounded-3xl aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Journal"/>
+            </div>
+            <div class="mt-5">
+              <div class="text-[11px] tracking-[0.3em] uppercase text-gold-600">Wellness · 3 min</div>
+              <h3 class="font-display text-2xl mt-2 text-ink-900 group-hover:text-blush-600 transition">A fragrance gentle enough to dream in</h3>
+              <p class="text-sm text-ink-700/70 mt-2">How we built our mogra-almond blend, drop by drop.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== NEWSLETTER ============== -->
+    <section class="relative py-28 bg-blush-100/60 overflow-hidden">
+      <svg class="absolute -bottom-10 -left-10 w-72 opacity-40 text-blush-200" viewBox="0 0 200 200" fill="currentColor"><circle cx="100" cy="100" r="90"/></svg>
+      <svg class="absolute -top-10 -right-10 w-72 opacity-40 text-sage-100" viewBox="0 0 200 200" fill="currentColor"><circle cx="100" cy="100" r="90"/></svg>
+
+      <div class="relative max-w-3xl mx-auto px-6 text-center">
+        <span class="text-[11px] tracking-[0.35em] uppercase text-blush-600">Petite Letters</span>
+        <h2 class="font-display text-4xl sm:text-5xl mt-4 text-ink-900 leading-tight">Slow stories, soft <em class="italic">arrivals.</em></h2>
+        <p class="mt-5 font-serif-soft text-lg text-ink-700/80">Subscribe for new collection drops, gentle parenting notes and a 10% welcome on your first trunk.</p>
+
+        <form class="mt-10 flex flex-col sm:flex-row gap-3 max-w-xl mx-auto" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Welcome ✦';">
+          <input type="email" required placeholder="your@email.com" class="luxe-input flex-1 px-6 py-4 rounded-full text-sm placeholder:text-ink-700/40"/>
+          <button class="bg-ink-800 text-cream-100 px-8 py-4 rounded-full text-sm tracking-[0.25em] uppercase hover:bg-blush-600 transition">Subscribe</button>
+        </form>
+
+        <p class="mt-4 text-xs text-ink-700/50">No spam, only the softest stories. Unsubscribe anytime.</p>
+      </div>
+    </section>
+
+    <!-- ============== FOOTER ============== -->
+    <footer class="bg-ink-900 text-cream-100/80 pt-20 pb-10 relative overflow-hidden">
+      <div class="grain absolute inset-0 opacity-20"></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-4">
+          <div class="flex items-center gap-3">
+            <div class="w-14 h-14 rounded-full bg-cream-50/10 border border-gold-400/40 flex items-center justify-center">
+              <span class="pka-logo text-xl">PKA</span>
+            </div>
+            <div>
+              <div class="font-display text-xl text-cream-50">Little Luxe</div>
+              <div class="text-[10px] tracking-[0.3em] uppercase text-gold-400">est · 2024</div>
+            </div>
+          </div>
+          <p class="mt-6 font-serif-soft text-lg text-cream-100/70 leading-relaxed max-w-sm">
+            A slow-craft baby atelier rooted in Indian heritage — where every weave, dye and stitch is a quiet act of love.
+          </p>
+          <div class="mt-8 flex items-center gap-4">
+            <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full border border-cream-100/20 flex items-center justify-center hover:bg-blush-600 transition">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="Pinterest" class="w-10 h-10 rounded-full border border-cream-100/20 flex items-center justify-center hover:bg-blush-600 transition">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M11 8c-1 4-2 8-3 12M11 8c2-1 5 0 5 3s-2 5-4 4"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full border border-cream-100/20 flex items-center justify-center hover:bg-blush-600 transition">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 3h-3a4 4 0 0 0-4 4v3H6v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2">
+          <div class="text-[11px] tracking-[0.3em] uppercase text-gold-400">Shop</div>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="#" class="hover:text-blush-200 transition">Clothing</a></li>
+            <li><a href="#" class="hover:text-blush-200 transition">Toys</a></li>
+            <li><a href="#" class="hover:text-blush-200 transition">Newborn</a></li>
+            <li><a href="#" class="hover:text-blush-200 transition">Gifting</a></li>
+            <li><a href="#" class="hover:text-blush-200 transition">Apothecary</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-2">
+          <div class="text-[11px] tracking-[0.3em] uppercase text-gold-400">Atelier</div>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="#" class="hover:text-blush-200 transition">Our Story</a></li>
+            <li><a href="#" class="hover:text-blush-200 transition">Artisans</a></li>
+            <li><a href="#" class="hover:text-blush-200 transition">Sustainability</a></li>
+            <li><a href="#" class="hover:text-blush-200 transition">Press</a></li>
+            <li><a href="#" class="hover:text-blush-200 transition">Journal</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4">
+          <div class="text-[11px] tracking-[0.3em] uppercase text-gold-400">Atelier Concierge</div>
+          <p class="mt-5 text-sm text-cream-100/70">Hours: Mon–Sat, 10am – 7pm IST</p>
+          <a href="mailto:hello@pkalittleluxe.com" class="block mt-2 font-display text-2xl text-cream-50 hover:text-blush-200 transition">hello@pkalittleluxe.com</a>
+          <p class="mt-4 text-sm text-cream-100/70">+91 98XX XXX XXX<br/>The Atelier, Mehrauli, New Delhi 110030</p>
+        </div>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-10 mt-16 pt-8 border-t border-cream-100/10 flex flex-wrap items-center justify-between gap-4 text-xs text-cream-100/50">
+        <div>© 2026 PKA Little Luxe. Made with tenderness in India.</div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-blush-200 transition">Privacy</a>
+          <a href="#" class="hover:text-blush-200 transition">Terms</a>
+          <a href="#" class="hover:text-blush-200 transition">Shipping</a>
+          <a href="#" class="hover:text-blush-200 transition">Returns</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Reveal on scroll
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    </script>
   </body>
 </html>
